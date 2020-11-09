@@ -31,10 +31,10 @@
         data += "<br/><br/><input type='button' value='Người chơi 1 đánh' onclick='changeValue1()''> <input type='button' value='Người chơi 2 đánh' onclick='changeValue2()''>"
         b.innerHTML = data;
         function changeValue1() {
-            let positionX = prompt("X: ");
-            let positionY = prompt("Y: ");
+            let positionX1 = prompt("X: ");
+            let positionY1 = prompt("Y: ");
             data = "";
-            board[positionX][positionY] = "x";
+            board[positionX1][positionY1] = "x";
             for (let i = 0; i < 3; i++) {
                 data += "<br/>";
                 for (let j = 0; j < 3; j++) {
@@ -45,10 +45,10 @@
             b.innerHTML = "<hr/>" + data;
         }
         function changeValue2() {
-            let positionX = prompt("X: ");
-            let positionY = prompt("Y: ");
+            let positionX2 = prompt("X: ");
+            let positionY2 = prompt("Y: ");
             data = "";
-            board[positionX][positionY] = "o";
+            board[positionX2][positionY2] = "o";
             for (let i = 0; i < 3; i++) {
                 data += "<br/>";
                 for (let j = 0; j < 3; j++) {
